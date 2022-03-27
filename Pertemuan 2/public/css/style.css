@@ -1,0 +1,45 @@
+body{
+    background: image(url(../img/background.jpg));
+}
+
+header {
+position: sticky;
+border-bottom: 2px red solid;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    float: right;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+
+}
+section {
+    margin-top: 50px;
+    padding:50px;
+}
+section h1 {
+    text-align: center;
+}
+
+article  {
+    border: 2px solid;
+    margin-top: 20;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    font-size:x-large;
+    background-color: black;
+    bottom: 0;
+    color: white;
+    height: 50px;
+    width: 100%;
+
+}
