@@ -1,10 +1,10 @@
 body{
-    background: image(url(../img/background.jpg));
+    background-image: url('../img/pattern.jpg');
 }
 
 header {
 position: sticky;
-border-bottom: 2px red solid;
+background-color: white;
     
 }
 nav {
@@ -17,18 +17,22 @@ nav {
 nav ul li {
     display: inline;
     margin-right: 10px;
+    font-size: large;
+    text-decoration:underline;
 
 }
 section {
-    margin-top: 50px;
+    background-color: white;
+    margin: 20px 100px ;
     padding:50px;
+    
 }
 section h1 {
     text-align: center;
 }
 
 article  {
-    border: 2px solid;
+    border-bottom: 2px solid;
     margin-top: 20;
     padding: 0;
 }
