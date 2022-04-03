@@ -60,14 +60,18 @@
         var name = document.getElementById("name").value
         var role = document.getElementById("role").value
         // buatlah kondisional berdasarkan dua variabel di atas yaitu name dan role, ketentuannya dapat dibaca di atas
-        if (name === null && role === null) {
-            alert('Dimohon isi terlebih dahulu form pada nama')
-        } else {
-            false
+        if (name != true) {
+            var jawab = document.innerHTML('Nama harus diisi!')
+        } else if (name == 'Mikael') {
+            var jawab = document.innerHTML('Halo Mikael, Pilih peranmu untuk memulai game!')
+        } if (name == 'Nina') {
+            var jawab = document.innerHTML('Selamat datang di Dunia Werewolf, Nina \nHalo Penyihir Nina, kamu dapat melihat siapa yang menjadi Werewolf!')
+        } if (name == 'Danu') {
+            var jawab = document.innerHTML('Selamat datang di Dunia Werewolf, Danu \nHalo Werewolf Danu, kamu dapat memilih siapa yang akan kamu makan malam ini!')
+        } if (name == 'Zero') {
+            var jawab = document.innerHTML('Selamat datang di Dunia Werewolf, Zero \nHalo Rakjel Zero, Kamu menjadi rakyat jelata ')
         }
-
-
-        var jawabanKonsol // = jawaban dari kondisional di-assign di sini
+        var jawabanKonsol = jawab// = jawaban dari kondisional di-assign di sini
         // Code Sampai sini
 
         jawaban.innerHTML = jawabanKonsol
