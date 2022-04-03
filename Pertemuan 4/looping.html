@@ -67,8 +67,19 @@
             2 - I will become web developer
         */
         var jawaban1 = ""
-            // Code kamu di sini, lakukan looping dengan while
-
+        // Code kamu di sini, lakukan looping dengan while
+        while (i <= 20) {
+            if (i % 2 === 0) {
+                jawaban1 += i + " - I love coding <br>"
+            }
+            i++
+        }
+        while (i >= 2) {
+            if (i % 2 === 0) {
+                jawaban1 += i + " - I will become web developer <br>"
+            }
+            i--
+        }
 
         // Driver Code, Jangan diganggu !
         document.getElementById("jawaban1").innerHTML = jawaban1
@@ -107,8 +118,16 @@
         */
 
         var jawaban2 = ""
-            // Code kamu di sini, lakukan looping dengan syntax for
-
+        // Code kamu di sini, lakukan looping dengan syntax for
+        for (let i = 0; i <= 20; i++) {
+            if (i % 3 === 0 && i % 2 === 1) {
+                jawaban2 += i + " - I Love Coding <br>"
+            } else if (i % 2 === 0) {
+                jawaban2 += i + " - Berkualitas <br>"
+            } else {
+                jawaban2 += i + " - Santai <br>"
+            }
+        }
 
         document.getElementById("jawaban2").innerHTML = jawaban2
     </script>
