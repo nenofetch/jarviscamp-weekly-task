@@ -102,14 +102,12 @@
         ]
 
         // Code kamu di sini, lakukan looping terhadap input di atas
-        // print value from input using for and display using document not console
         function dataHandling(input) {
-            for (let i = 0; i < input.length; i++) {
-                document.write(`Nomor ID: ${input[i][0]}</br>`)
-                document.write(`Nama Lengkap: ${input[i][1]}</br>`)
-                document.write(`TTL: ${input[i][2]} ${input[i][3]}</br>`)
-                document.write(`Hobi: ${input[i][4]} </br>`)
+            var i = 0
+            while (i <= input.length) {
+                document.writeln(`Nomor ID: ${input[i][0]}</br> Nama Lengkap: ${input[i][1]}</br>TTL: ${input[i][2]} ${input[i][3]}</br>Hobi: ${input[i][4]} </br>`)
                 document.write(`</br>`)
+                i++
             }
         }
 
