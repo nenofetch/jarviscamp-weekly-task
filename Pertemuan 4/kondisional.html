@@ -60,17 +60,21 @@
         var name = document.getElementById("name").value
         var role = document.getElementById("role").value
         // buatlah kondisional berdasarkan dua variabel di atas yaitu name dan role, ketentuannya dapat dibaca di atas
-        if (name != true) {
-            var jawab = document.innerHTML('Nama harus diisi!')
-        } else if (name == 'Mikael') {
-            var jawab = document.innerHTML('Halo Mikael, Pilih peranmu untuk memulai game!')
-        } if (name == 'Nina') {
-            var jawab = document.innerHTML('Selamat datang di Dunia Werewolf, Nina \nHalo Penyihir Nina, kamu dapat melihat siapa yang menjadi Werewolf!')
-        } if (name == 'Danu') {
-            var jawab = document.innerHTML('Selamat datang di Dunia Werewolf, Danu \nHalo Werewolf Danu, kamu dapat memilih siapa yang akan kamu makan malam ini!')
-        } if (name == 'Zero') {
-            var jawab = document.innerHTML('Selamat datang di Dunia Werewolf, Zero \nHalo Rakjel Zero, Kamu menjadi rakyat jelata ')
+        if (name == '') {
+            jawaban.innerHTML = "Nama harus diisi!"
+        } else if (role == '') {
+            jawaban.innerHTML = "Halo " + name + ", Pilih peranmu untuk memulai game!"
+        } else if (role == 'Penyihir') {
+            jawaban.innerHTML = "Selamat datang di Dunia Werewolf, " + name
+            jawaban.innerHTML += "<br>Halo Penyihir " + name + ", kamu dapat melihat siapa yang menjadi Werewolf!"
+        } else if (role == 'Werewolf') {
+            jawaban.innerHTML = "Selamat datang di Dunia Werewolf, " + name
+            jawaban.innerHTML += "<br>Halo Werewolf " + name + ", kamu dapat memilih siapa yang akan kamu makan malam ini!"
+        } else if (role == 'Rakjel') {
+            jawaban.innerHTML = "Selamat datang di Dunia Werewolf, " + name
+            jawaban.innerHTML += "<br>Halo Rakjel " + name + ", Kamu menjadi rakyat jelata"
         }
+
         var jawabanKonsol = jawab// = jawaban dari kondisional di-assign di sini
         // Code Sampai sini
 
