@@ -45,8 +45,8 @@
     echo "<label>String: </label> \"$string2\" <br>";
     echo "Kata pertama: " . substr($string2, 0, 1) . "<br>";
     // Lanjutkan di bawah ini
-    echo "Kata kedua: ";
-    echo "<br> Kata Ketiga: ";
+    echo "Kata kedua: " . substr($string2, 2, 5);
+    echo "<br> Kata Ketiga: " . substr($string2, 7, 9);
 
     echo "<h3> Soal No 3 </h3>";
     /*
@@ -56,6 +56,11 @@
     $string3 = "PHP is old but sexy!";
     echo "String: \"$string3\" ";
     // OUTPUT : "PHP is old but awesome"
+    $cari_kata = "sexy";
+    $ganti = "awesome";
+    echo "<p>Sesudah Diubah</p>";
+    $kataBaru= str_replace($cari_kata, $ganti, $string3);
+    echo "String: \"$kataBaru\" ";
 
     ?>
 </body>
