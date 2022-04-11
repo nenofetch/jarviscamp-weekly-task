@@ -9,3 +9,9 @@ Repository ini dibuat untuk mengirimkan tugas selama saya mengikuti kegiatan Jar
 6. PHP OOP
 7. Laravel 8
 
+How to run this
+
+You can type cmdline on below in your terminal/cmd. Make sure you computer was installed php
+
+ `php -S localhost:8080`
+
