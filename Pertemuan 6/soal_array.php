@@ -19,8 +19,8 @@
             Kids : "Mike", "Dustin", "Will", "Lucas", "Max", "Eleven" 
             Adults: "Hopper", "Nancy",  "Joyce", "Jonathan", "Murray"
         */
-    $kids; // Lengkapi di sini
-    $adults;
+    $kids = ["Mike", "Dustin", "Will", "Lucas", "Max", "Eleven"]; // Lengkapi di sini
+    $adults = ["Hopper", "Nancy",  "Joyce", "Jonathan", "Murray"];
     echo "<h3> Soal 2</h3>";
     /* 
             SOAL NO 2
@@ -28,10 +28,15 @@
         */
     echo "Cast Stranger Things: ";
     echo "<br>";
-    echo "Total Kids: "; // Berapa panjang array kids
+    echo "Total Kids: $kids[2]"; // Berapa panjang array kids
     echo "<br>";
     echo "<ol>";
     echo "<li> $kids[0] </li>";
+    echo "<li> $kids[1] </li>";
+    echo "<li> $kids[2] </li>";
+    echo "<li> $kids[3] </li>";
+    echo "<li> $kids[4] </li>";
+    echo "<li> $kids[5] </li>";
     // Lanjutkan
 
     echo "</ol>";
@@ -41,8 +46,13 @@
     echo "<ol>";
     echo "<li> $adults[0] </li>";
     // Lanjutkan
-
+    echo "<li> $adults[1]</li>";
+    echo "<li> $adults[2]</li>";
+    echo "<li> $adults[3]</li>";
+    echo "<li> $adults[4]</li>";
     echo "</ol>";
+
+
 
     /*
             SOAL No 3
