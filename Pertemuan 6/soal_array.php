@@ -28,7 +28,7 @@
         */
     echo "Cast Stranger Things: ";
     echo "<br>";
-    echo "Total Kids: $kids[2]"; // Berapa panjang array kids
+    echo "Total Kids: " . count($kids); // Berapa panjang array kids
     echo "<br>";
     echo "<ol>";
     echo "<li> $kids[0] </li>";
@@ -41,7 +41,7 @@
 
     echo "</ol>";
 
-    echo "Total Adults: "; // Berapa panjang array adults
+    echo "Total Adults: " . count($adults); // Berapa panjang array adults
     echo "<br>";
     echo "<ol>";
     echo "<li> $adults[0] </li>";
@@ -117,6 +117,37 @@
                 )
             
         */
+
+    $data = [
+        [
+            "Name" => "Will Byers",
+            "Age" => 12,
+            "Aliases" => "Will the Wise",
+            "Status" => "Alive"
+        ],
+        [
+            "Name" => "Mike Wheeler",
+            "Age" => 12,
+            "Aliases" => "Dugeon Master",
+            "Status" => "Alive"
+        ],
+        [
+            "Name" => "Jim Hooper",
+            "Age" => 43,
+            "Aliases" => "Chief Hopper",
+            "Status" => "Deceased"
+        ],
+        [
+            "Name" => "Eleven",
+            "Age" => 12,
+            "Aliases" => "El",
+            "Status" => "Alive"
+        ]
+    ];
+
+    echo "<pre>";
+    print_r($data);
+    echo "</pre>";
     ?>
 </body>
 
