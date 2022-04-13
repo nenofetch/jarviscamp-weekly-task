@@ -38,6 +38,7 @@
 		crossorigin="anonymous"></script>
 
 	<script>
+		// initialitation
 		var items = [
 			['001', 'Keyboard Logitek', 60000, 'Keyboard yang mantap untuk kantoran', 'assets/logitek.jpg'],
 			['002', 'Keyboard MSI', 300000, 'Keyboard gaming MSI mekanik', 'assets/msi.jpg'],
@@ -45,6 +46,7 @@
 			['004', 'Mouse Jerry', 30000, 'Mouse yang disukai kucing', 'assets/jerry.jpg']
 		]
 
+		// displaying each items to html
 		const printBarang = (items) => {
 			let listBarang = document.getElementById('listBarang');
 			for (let i = 0; i < items.length; i++) {
@@ -66,6 +68,20 @@
 			}
 		}
 		printBarang(items)
+
+		// Search bar
+		const searchItem = document.querySelector('#searchItem')
+		const keyword = document.querySelector('#keyword')
+		const listBarang = document.querySelector('#listBarang')
+		searchItem.addEventListener('click', function (e) {
+			e.preventDefault()
+			listBarang.innerHTML = ''
+			const keywordValue = keyword.value
+			const filterBarang = items.filter(function (item) {
+				return item[1].toLowerCase().includes(keywordValue.toLowerCase())
+			})
+			printBarang(filterBarang)
+		})
 
 	</script>
 </body>
