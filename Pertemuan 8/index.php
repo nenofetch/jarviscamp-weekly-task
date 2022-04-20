@@ -10,8 +10,8 @@ echo "legs : $sheep->legs<br>"; // 4
 echo "cold blooded : $sheep->cold_blooded<br>"; // "no"
 
 echo "<br>";
-$kodok = new Frog("Kodok");
-echo "Name : $kodok->name <br>"; // "Kodok"
+$kodok = new Frog("buduk");
+echo "Name : $kodok->name <br>"; // "buduk"
 echo "legs : $kodok->legs <br>"; // 4
 echo "cold blooded : $kodok->cold_blooded <br>"; // "no"
 $kodok->jump(); // "Jump : hop hop"
