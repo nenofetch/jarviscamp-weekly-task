@@ -81,16 +81,24 @@ NB: DILARANG menggunakan built-in function PHP seperti strrev() dll. Gunakan loo
 
 // Code function di sini
 function palindrome($input) {
-  $panjang = strlen($input);
-  for ($i=0; $i < $panjang; $i++) {
-    $input2 = $input[$i];
-    $input3 = $input[$panjang - 1 - $i];
-    if ($input2 != $input3) {
-      return false;
+  $i = 0;
+  $panjangString = strlen($input) -1;
+  $ket = 0;
+  while ($i < $panjangString) {
+    if ($input[$i] == $input[$panjangString]) {
+      $ket++;
     }
+    $i++;
+    $panjangString--;
   }
-  return true;
+  if ($ket == 1) {
+    echo "false <br>";
+  } else {
+    echo "true <br>";
+  }
+
 }
+
 // Hapus komentar di bawah ini untuk jalankan code
 palindrome("civic") ; // true
 palindrome("nababan") ; // true
@@ -110,13 +118,13 @@ sama dengan 60 dan lebih kecil dari 70 maka akan mereturn string “Cukup” sel
 // Code function di sini
 function tentukan_nilai($nilai) {
   if ($nilai >= 85 && $nilai <= 100) {
-    return "Sangat Baik";
+    return "Sangat Baik </br>";
   } else if ($nilai >= 70 && $nilai <= 85) {
-    return "Baik";
+    return "Baik </br>";
   } else if ($nilai >= 60 && $nilai <= 70) {
-    return "Cukup";
+    return "Cukup </br>";
   } else {
-    return "Kurang";
+    return "Kurang </br>";
   }
 }
 
