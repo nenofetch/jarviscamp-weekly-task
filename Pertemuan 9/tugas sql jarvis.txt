@@ -56,3 +56,7 @@ SELECT * FROM items WHERE name LIKE '%sang%';
 
 C. Showing data items categories using joint
 SELECT items.name, items.description, items.price, items.stock, items.category_id, categories.name FROM items INNER JOIN categories ON items.category_id=categories.id;
+
+5.Mengubah Data dari Database
+//Changing price of 'Sumsang' to 2500000.
+UPDATE items SET price = 2500000 WHERE id=1;
