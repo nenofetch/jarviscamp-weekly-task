@@ -10,12 +10,13 @@
 
 <body>
     <h1>Buat Account Baru</h1>
-    <form action="/welcome" method="POST">
+    <form action="/welcome" method="post">
+        @csrf
         <h3>Sign Up Form</h3>
         <p>First Name</p>
-        <input type="text">
+        <input type="text" name="firstname">
         <p>Last Name</p>
-        <input type="text">
+        <input type="text" name="lastname">
         <p>Gender</p>
         <input type="radio" id="male" name="gender" value="Male">
         <label for="male">Male</label><br>
@@ -42,7 +43,7 @@
         <label for="boat">I have a boat</label><br>
         <p>Bio :</p>
         <textarea name="bio" id="" cols="30" rows="10"></textarea><br>
-        <input type="button" value="Sign Up">
+        <input type="submit" value="Sign Up">
     </form>
 </body>
 

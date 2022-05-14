@@ -22,4 +22,4 @@ Route::get('/', [HomeController::class, "home"]);
 
 Route::get('/register',  [AuthController::class, "register"]);
 
-Route::get('/welcome', [AuthController::class, "welcome"]);
+Route::post('/welcome', [AuthController::class, "welcome"]);
