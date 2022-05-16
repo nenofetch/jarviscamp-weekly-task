@@ -10,7 +10,7 @@
 
 <body>
     <h1>Buat Account Baru</h1>
-    <form action="/welcome" method="post">
+    <form action="/welcome/{firstname}/{lastname?}" method="post">
         @csrf
         <h3>Sign Up Form</h3>
         <p>First Name</p>

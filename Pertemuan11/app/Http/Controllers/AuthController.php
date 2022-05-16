@@ -11,8 +11,8 @@ class AuthController extends Controller
         return view("register");
     }
 
-    function welcome(Request $request)
+    function welcome($firstname, $lastname = 'testing')
     {
-        dd($request);
+        return $firstname . " " . $lastname;
     }
 }
