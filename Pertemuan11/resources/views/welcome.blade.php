@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>SELAMAT DATANG</h1>
+    <h1>SELAMAT DATANG {{ $firstname }} {{ $lastname }}</h1>
     <h2>Terima Kasih telah bergabung di SanberBook. Social Media kita bersama!</h2>
 </body>
 

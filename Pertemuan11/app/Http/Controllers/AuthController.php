@@ -11,8 +11,11 @@ class AuthController extends Controller
         return view("register");
     }
 
-    function welcome($firstname, $lastname = 'testing')
+    function welcome(Request $request)
     {
-        return $firstname . " " . $lastname;
+        return view('welcome', [
+            'firstname' => $request->firstname,
+            'lastname' => $request->lastname
+        ]);
     }
 }
