@@ -13,13 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('admin');
-});
 
+Route::redirect('/', '/table', 301);
 Route::get('/table', function () {
-    return 'Halaman table';
+    return view('admin', [
+        'title' => "table"
+    ]);
 });
 Route::get('/data-table', function () {
-    return 'Halaman data-table';
+    return view('pages.datatables', [
+        'title' => "data-table"
+    ]);
 });
