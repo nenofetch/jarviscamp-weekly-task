@@ -17,11 +17,13 @@ use Illuminate\Support\Facades\Route;
 Route::redirect('/', '/table', 301);
 Route::get('/table', function () {
     return view('admin', [
+        'page' => "Table Page",
         'title' => "table"
     ]);
 });
 Route::get('/data-table', function () {
     return view('pages.datatables', [
+        'page' => "DataTables Page",
         'title' => "data-table"
     ]);
 });
