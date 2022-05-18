@@ -102,9 +102,13 @@
 
             <!-- Main content -->
             <section class="content">
-
-                @yield('content')
-
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            @yield('content')
+                        </div>
+                    </div>
+                </div>
             </section>
             <!-- /.content -->
         </div>
@@ -132,6 +136,8 @@
     <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="/dist/js/adminlte.min.js"></script>
+    @stack('script')
+
 </body>
 
 </html>

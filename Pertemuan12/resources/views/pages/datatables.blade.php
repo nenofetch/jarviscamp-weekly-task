@@ -1,13 +1,5 @@
 @extends('components.main')
-@push('script')
-    <script src="plugins/datatables/jquery.dataTables.js"></script>
-    <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
-    <script>
-        $(function() {
-            $("#example1").DataTable();
-        });
-    </script>
-@endpush
+
 @section('content')
     <div class="card">
         <div class="card-header">
@@ -444,3 +436,21 @@
         <!-- /.card-body -->
     </div>
 @endsection
+
+@push('script')
+    <script src="/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script>
+        $(function() {
+            $("#example1").DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+@endpush
