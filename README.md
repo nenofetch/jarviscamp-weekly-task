@@ -11,7 +11,20 @@ Repository ini dibuat untuk mengirimkan tugas selama saya mengikuti kegiatan Jar
 
 How to run this
 
-You can type cmdline on below in your terminal/cmd. Make sure you computer was installed php
+You can type cmdline on below on your terminal/cmd. Make sure your computer was installed php
 
- `php -S localhost:8080`
+ ```
+ php -S localhost:8080
+```
+For laravel type cmdline on below onn your computer. Make sure your computer was installed composer
+
+ ```
+ $ cd /path/to/project
+ $ composer install
+ $ cp .env.example .env
+ $ php artisan cache:clear
+ $ php artisan key:generate
+ $ php artisan serve
+ ```  
+
 
