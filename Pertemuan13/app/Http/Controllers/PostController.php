@@ -37,7 +37,19 @@ class PostController extends Controller
         $post = Post::find($id);
         return view('edit', ['post' => $post]);
     }
-    
+
+    public function update($id, Request $request)
+    {
+        $data = [
+            "title" => $request->title,
+            "body" => $request->body
+        ];
+
+        $updates = Post::find($id)->update($data);
+        if ($updates) {
+            return redirect('/');
+        }
+    }
 
     public function show($id)
     {

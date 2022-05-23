@@ -24,7 +24,7 @@
 
         <hr>
 
-        <form action="/post/update/{id}" method="post">
+        <form action="/post/update/{{ $post->id }}" method="post">
             @csrf
             @method('PUT')
             <div class="mb-3">
